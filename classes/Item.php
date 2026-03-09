@@ -1,9 +1,9 @@
 <?php
 
 abstract class Item {
-    protected string $title;
-    protected string $author;
-    protected string $image;
+    private string $title;
+    private string $author;
+    private string $image;
 
 
     public function __construct(){
@@ -12,7 +12,5 @@ abstract class Item {
         $this->image = $image;
     }
 
-    public function getInfo() {
-        //affichage dernière info
-    }
+    abstract public function getInfo();
 }

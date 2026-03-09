@@ -3,7 +3,7 @@
 require_once 'Item.php';
 
 class Book extends Item {
-    private int $issueNumber;
+    private int $issueNumber = 0;
 
     public function setIssueNumber(int $issueNumber): void{
         $this->issueNumber = $issueNumber;
