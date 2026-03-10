@@ -2,7 +2,7 @@
 
 require_once 'Item.php';
 
-class Book extends Item {
+class Magazine extends Item {
     private int $issueNumber = 0;
 
     public function setIssueNumber(int $issueNumber): void{

@@ -3,26 +3,34 @@
 require_once 'Item.php';
 
 class Library extends Item {
-    static int $totalItems = 0; // Nombre d'éléments dans la bibliothèque
+    public static int $totalItems = 0; // Nombre d'éléments dans la bibliothèque
+    private array $items = [];
 
-    public function setTotalItems(int $totalItems): void{
-        $this->totalItems = $totalItems;
+    public function __construct(){
+        self::$totalItems ++;
     }
 
+    // Setter/Getter items
+    public function setItems(array $items): void{
+        $this->items = $items;
+    }
+    public function getItems(): array{
+        return $this->items;
+    }
+    
+    // Setter/Getter totalItems
+    public function setTotalItems(int $totalItems): void{
+        $this->totalItems = self::$totalItems;
+        }
     public function getTotalItems(): int{
         return $this->totalItems;
     }
 
     public function addItem(Item $item){
-
+        $items[] = $item;
         $totalItems += 1;
-
-
-        //Incremente $totalItems
-        // Ajoute un élément à la bibliothèque
     }
-
-    public function getItems(){
-        // Affiche la liste des magazines et livres
+    public function getInfo(){
+        
     }
 }
