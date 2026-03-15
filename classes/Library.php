@@ -1,14 +1,9 @@
 <?php 
 
-require_once 'Item.php';
 
-class Library extends Item {
+class Library {
     public static int $totalItems = 0; // Nombre d'éléments dans la bibliothèque
     private array $items = [];
-
-    public function __construct(){
-        // self::$totalItems ++;
-    }
 
     // Setter/Getter items
     public function setItems(array $items): void{
@@ -29,8 +24,5 @@ class Library extends Item {
     public function addItem(Item $item){
         $items[] = $item;
         self::$totalItems += 1;
-    }
-    public function getInfo(){
-        
     }
 }
