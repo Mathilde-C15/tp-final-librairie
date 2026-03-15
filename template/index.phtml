@@ -3,8 +3,8 @@
     <h1>L'univers des livres et magazines - <?= Library::$totalItems ?> en stocks</h1>
     <article>
         
-        <div>
-            <img src="assets/images/" alt="">
+        <div class = "img">
+            <img src="assets/images/<?= $book1->getImage(); ?> " alt="">
         </div>
         <div>
             <h3><?= $book1->getTitle() ?></h3>
@@ -12,7 +12,7 @@
         <div>
             <p>Auteur : </p><?= $book1->getAuthor() ?>
         </div>
-        <div>
+        <div class = "info-line">
             <p><?= $book1->getInfo() ?></p>
         </div>
        
@@ -20,8 +20,8 @@
 
     <article>
         
-        <div>
-            <img src="assets/images/" alt="">
+        <div class = "img">
+            <img src="assets/images/<?= $magazine1->getImage(); ?>" alt="">
         </div>
         <div>
             <h3><?= $magazine1->getTitle() ?></h3>
@@ -29,7 +29,7 @@
         <div>
             <p>Auteur :</p><?= $magazine1->getAuthor() ?>
         </div>
-        <div>
+        <div class = "info-line">
             <p><?= $magazine1->getInfo() ?></p>
         </div>
     
@@ -37,8 +37,8 @@
 
     <article>
 
-        <div>
-            <img src="assets/images/" alt="">
+        <div class = "img">
+            <img src="assets/images/<?= $book2->getImage(); ?>" alt="">
         </div>
         <div>
             <h3><?= $book2->getTitle() ?></h3>
@@ -46,7 +46,7 @@
         <div>
             <p>Auteur : </p><?= $book2->getAuthor() ?>
         </div>
-        <div>
+        <div class = "info-line">
             <p><?= $book2->getInfo() ?></p>
         </div>
     
@@ -54,8 +54,8 @@
 
     <article>
         
-        <div>
-            <img src="assets/images/" alt="">
+        <div class = "img">
+            <img src="assets/images/<?= $magazine2->getImage(); ?>" alt="">
         </div>
         <div>
             <h3><?= $magazine2->getTitle() ?></h3>
@@ -63,7 +63,7 @@
         <div>
             <p>Auteur :</p><?= $magazine2->getAuthor() ?>
         </div>
-        <div>
+        <div class = "info-line">
             <p><?= $magazine2->getInfo() ?></p>
         </div>
     
