@@ -6,6 +6,7 @@ class Magazine extends Item {
     private int $issueNumber = 0;
 
     public function setIssueNumber(int $issueNumber): void{
+        // Ajouter les verifications
         $this->issueNumber = $issueNumber;
     }
 

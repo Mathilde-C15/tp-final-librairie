@@ -7,7 +7,7 @@ class Library extends Item {
     private array $items = [];
 
     public function __construct(){
-        self::$totalItems ++;
+        // self::$totalItems ++;
     }
 
     // Setter/Getter items
@@ -28,7 +28,7 @@ class Library extends Item {
 
     public function addItem(Item $item){
         $items[] = $item;
-        $totalItems += 1;
+        self::$totalItems += 1;
     }
     public function getInfo(){
         
