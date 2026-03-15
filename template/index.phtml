@@ -1,16 +1,19 @@
-<section>
+<section class = "container">
 
     <h1>L'univers des livres et magazines - <?= Library::$totalItems ?> en stocks</h1>
     <article>
         
         <div>
-            <?= $book1->getTitle() ?>
+            <img src="assets/images/" alt="">
         </div>
         <div>
-            <?= $book1->getAuthor() ?>
+            <h3><?= $book1->getTitle() ?></h3>
         </div>
         <div>
-            <?= $book1->getInfo() ?>
+            <p>Auteur : </p><?= $book1->getAuthor() ?>
+        </div>
+        <div>
+            <p><?= $book1->getInfo() ?></p>
         </div>
        
     </article>
@@ -18,13 +21,33 @@
     <article>
         
         <div>
-            <?= $magazine1->getTitle() ?>
+            <img src="assets/images/" alt="">
         </div>
         <div>
-            <?= $magazine1->getAuthor() ?>
+            <h3><?= $magazine1->getTitle() ?></h3>
         </div>
         <div>
-            <?= $magazine1->getInfo() ?>
+            <p>Auteur :</p><?= $magazine1->getAuthor() ?>
+        </div>
+        <div>
+            <p><?= $magazine1->getInfo() ?></p>
+        </div>
+    
+    </article>
+
+    <article>
+
+        <div>
+            <img src="assets/images/" alt="">
+        </div>
+        <div>
+            <h3><?= $book2->getTitle() ?></h3>
+        </div>
+        <div>
+            <p>Auteur : </p><?= $book2->getAuthor() ?>
+        </div>
+        <div>
+            <p><?= $book2->getInfo() ?></p>
         </div>
     
     </article>
@@ -32,27 +55,16 @@
     <article>
         
         <div>
-            <?= $book2->getTitle() ?>
+            <img src="assets/images/" alt="">
         </div>
         <div>
-            <?= $book2->getAuthor() ?>
+            <h3><?= $magazine2->getTitle() ?></h3>
         </div>
         <div>
-            <?= $book2->getInfo() ?>
-        </div>
-    
-    </article>
-
-    <article>
-        
-        <div>
-            <?= $magazine2->getTitle() ?>
+            <p>Auteur :</p><?= $magazine2->getAuthor() ?>
         </div>
         <div>
-            <?= $magazine2->getAuthor() ?>
-        </div>
-        <div>
-            <?= $magazine2->getInfo() ?>
+            <p><?= $magazine2->getInfo() ?></p>
         </div>
     
     </article>
